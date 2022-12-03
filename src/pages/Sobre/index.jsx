@@ -1,0 +1,34 @@
+import React from 'react';
+import './sobre.css'
+import Card from '../../components/Card';
+import imgFelipe from '../../assets/felipe.jpeg';
+import imgLucas from '../../assets/lucas.jpeg';
+import imgPaulo from '../../assets/paulo.jpeg';
+import imgSergio from '../../assets/sergio.jpeg';
+import imgVeronica from '../../assets/veronica.jpeg';
+import imgViviane from '../../assets/viviane.jpeg';
+import { Link } from 'react-router-dom';
+function Sobre() {
+    return (
+        <div className='container-sobre'>
+            <div className='titulo'>Grupo 02</div>
+            <div className='area-card'>
+                <div className='grupo1'>
+                    <Card name="Felipe Barbosa" img={imgFelipe} />
+                    <Card name="Lucas Henrique" img={imgLucas} />
+                    <Card name="Paulo Victor" img={imgPaulo} />
+                </div>
+                <div className='grupo1'>
+                    <Card name="Sérgio Botelho" img={imgSergio} />
+                    <Card name="Verônica Pereira" img={imgVeronica} />
+                    <Card name="Viviane Pinheiro" img={imgViviane} />
+                </div>
+
+            </div>
+            <Link to='/' className='voltar'>&lt;</Link>
+
+        </div>
+    )
+}
+
+export default Sobre;
