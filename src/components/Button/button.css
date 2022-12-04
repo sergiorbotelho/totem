@@ -1,5 +1,14 @@
 
-.container-btn{
+.container-btn .text-button{
+    color: #FFF;
+    font-size: 24px;
+}
+
+.container-btn:first-child{
+    margin-left: 10px;
+}
+
+.text-button{
     width: 150px;
     background-color: #185c91;
     padding: 10px;
@@ -9,15 +18,4 @@
     align-items: center;
     cursor: pointer;
     margin-right: 10px;
-
-
-}
-
-.container-btn .text-button{
-    color: #FFF;
-    font-size: 24px;
-}
-
-.container-btn:first-child{
-    margin-left: 10px;
 }
