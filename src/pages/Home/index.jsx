@@ -81,14 +81,15 @@ export default function Home() {
   function typeNum(typ){
     setPostTickets(typ)
     setGoPost(true)
-    console.log(ticketName)
   }
 
   return (
     <div className="container">
       <div className="container-ticket">
         <h1>Senha</h1>
-        <span>{ tickets?.ticket_pass || '000' }</span>
+        <span className="ticket-num">
+          { tickets?.ticket_pass || '000' }
+        </span>
         <span className="type-name">
           { tickets?.name || '' }
         </span>
@@ -96,13 +97,11 @@ export default function Home() {
           { type }
         </span>
       </div>
-      <div>
-        <Input
-          placeholder='Digite seu nome aqui'
-          type='text'
-          onChange={(e) => setTicketName(e.target.value)}
-        />
-      </div>
+      <Input
+        placeholder='Digite seu nome'
+        type='text'
+        onChange={(e) => setTicketName(e.target.value)}
+      />
       <div className="container-button">
         <Button
           data="Normal"
