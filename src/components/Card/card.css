@@ -4,9 +4,9 @@
 }
 
 .card{
-    margin-left: 30px;
-    width: 250px;
-    height: 250px;
+    margin-left: 20px;
+    width: 180px;
+    height: 180px;
     position: relative;
     cursor: pointer;
 }
@@ -24,14 +24,13 @@
     flex-direction: column;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.055);
     transition: all .4s;
-    
-}   
+    text-align: center;
+}
 .imgCard{
-    width: 250px;
-    height: 250px;
+    width: 180px;
+    height: 180px;
     position: absolute;
     visibility: hidden;
-    
 }
 
 .card:hover .imgCard{
@@ -48,7 +47,7 @@
     font-weight: bold;
 }
 .h1:hover{
-    color: transparent; 
+    color: transparent;
 }
 .card::before,
 .card::after{
@@ -64,7 +63,6 @@
 .card::before{
     top: 0;
     right: 0;
-
 }
 
 .card::after{
@@ -78,8 +76,6 @@
     height: 50px;
     transform: translate(20px, -20px);
     border-radius: 50%;
-    
-
 }
 .card:hover::after{
     width: 100px;
@@ -87,3 +83,51 @@
     transform: translate(-20px, 20px );
     border-radius: 50%;
 }
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .h1{
+        font-size: 19px;
+    }
+    .card{
+        margin: 6px;
+        width: 120px;
+        height: 120px;
+    }
+    .imgCard{
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .h1{
+        font-size: 19px;
+    }
+    .card{
+        margin-left: 20px;
+        width: 120px;
+        height: 120px;
+    }
+    .imgCard{
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 992px) {
+    .h1{
+        font-size: 24px;
+    }
+    .card{
+        margin-left: 20px;
+        width: 150px;
+        height: 150px;
+    }
+    .imgCard{
+        width: 150px;
+        height: 150px;
+    }
+ }

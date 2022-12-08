@@ -3,7 +3,6 @@ import './card.css'
 function Card({ name, img }) {
 
     return (
-        
         <div className='container-card'>
             <div className='card'>
                 <div className='content'>
