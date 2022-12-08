@@ -10,11 +10,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    
 }
 .titulo{
-   
     font-size: 40px;
     font-weight: bold;
     margin-bottom: 50px;
@@ -34,7 +31,6 @@
 .grupo1{
     display: flex;
     margin-bottom: 30px;
-    
 }
 
 .voltar{
@@ -54,4 +50,13 @@
 
 .voltar:hover{
     opacity: 0.7;
+}
+
+@media (max-width: 575.98px) {
+    .area-card{
+        flex-direction: row;
+    }
+    .grupo1{
+        flex-direction: column;
+    }
 }

@@ -81,6 +81,7 @@ export default function Home() {
   function typeNum(typ){
     setPostTickets(typ)
     setGoPost(true)
+    getTickets()
   }
 
   return (
